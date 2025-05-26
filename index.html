@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlaza un CSS si lo necesitas -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Enlace a Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        header {
+            background-color: pink;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        /* Ajustamos el tamaño y alineación del icono */
+        .fa-twitter {
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- 📌 MENÚ -->
-    <header style="background-color: pink; color: white; padding: 10px; text-align: center;">
+    <!-- MENÚ -->
+    <header>
         <h1>Mi Sitio Web</h1>
         <nav>
-            <ul style="list-style: none; padding: 0;">
-                <li style="display: inline; margin-right: 10px;"><a href="#" style="color: white;">Inicio</a></li>
-                <li style="display: inline; margin-right: 10px;"><a href="#" style="color: white;">Servicios</a></li>
-                <li style="display: inline;"><a href="#" style="color: white;">Contacto</a></li>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- 📌 CUERPO -->
+    <!-- CUERPO -->
     <main style="padding: 20px; text-align: center;">
         <h2>Bienvenido a mi página</h2>
         <p>Este es un sitio web de prueba para el TP1 de Lenguaje III.</p>
     </main>
 
-    <!-- 📌 PIE DE PÁGINA -->
-    <footer style="background-color: gray; color: white; text-align: center; padding: 10px;">
+    <!-- PIE DE PÁGINA -->
+    <footer>
         <p>&copy; 2025 - 
-            <a href="https://twitter.com/" target="_blank" style="color: white;">
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
                 <i class="fab fa-twitter"></i> Twitter
-            </a> - Gatti, Fiorella
+            </a> 
+            - Gatti, Fiorella
         </p>
     </footer>
 
 </body>
 </html>
+
